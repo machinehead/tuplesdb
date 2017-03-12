@@ -1,0 +1,10 @@
+<table>
+{% for tuple in tuples %}
+<tr>
+    <td>{{ tuple["instance"] }}</td>
+    <td>{{ tuple["class"] }}</td>
+    <td>{{ tuple["frequency"] }}</td>
+    <td>{{ tuple["pidspread"] }}</td>
+</tr>
+{% end %}
+</table>

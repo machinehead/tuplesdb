@@ -1,0 +1,8 @@
+<table>
+{% for clazz, freq in sorted(classes.iteritems(), key=lambda (c,f): f, reverse=True) %}
+<tr>
+    <td>{{ clazz }}</td>
+    <td>{{ freq }}</td>
+</tr>
+{% end %}
+</table>
